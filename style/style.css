@@ -5,7 +5,7 @@
 @import url("/style/carousel.css");
 @import url("/style/topics.css");
 @import url("/style/contacts.css");
-@import url('/style/footer.css');
+@import url("/style/footer.css");
 
 :root{
     --color-background: #EBECEE;
