@@ -1,0 +1,169 @@
+
+
+.banner { 
+    background: var(--color-second);
+    color: var(--color-first);
+    text-align: center;
+    padding: 2.5em;
+}
+
+.banner__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.banner__text {
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.banner__search {
+    background-color: transparent;
+    border-radius: 24px;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    border: 1px solid var(--color-first);
+    color: white;
+}
+
+.banner__search::placeholder {
+    color: var(--color-first);
+    font-family: var(--font-project);
+    font-weight: 400;
+    background: url(/assets/Pesquisa.svg) no-repeat;
+    background-position: 1rem;
+}
+
+.card {
+    background-color: var(--color-first);
+    margin: 1.5rem 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.card__description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description__title {
+    color: var(--color-button);
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.description__main-title{
+    color: var(--color-second);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1rem 0rem;
+    display: flex;
+}
+
+.description__text {
+    color: black;
+    margin: 0.8rem 0;
+    font-size: 0.8rem;
+}
+
+
+.card__description__image {
+    width: 40%;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.card__button__anchor{
+    text-decoration: none;
+    background: var(--color-button);
+    width: 40%;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--color-first);
+    font-weight: bold;
+}
+
+.description__img {
+    margin-bottom: 0.5rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .banner{
+        padding: 5rem 0;
+    }
+
+    .banner__title {
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+    .banner__search{
+        width: 50%;
+    }
+    .card {
+        height: 30%;
+        width: 50%;
+        margin: 1.5rem auto;
+    }
+
+    .card__button__anchor{
+        width: 36%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .banner__search{
+        width: 30%;
+    }
+
+    .description { 
+        margin: 0 2rem 1rem 0;
+    }
+
+    .description__title{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .card {
+        height: 25%;
+        width: 45%;
+        margin: 1.5rem auto;
+        padding: 1.2rem;
+    }
+
+    .description__text {
+        color: black;
+        margin: 0.8rem 0;
+        font-size: 1rem;
+    }
+
+    .card__button__anchor{
+        width: 31%;
+    }
+
+    .card__description__image {
+        width: 15vw;
+    }
+
+}
