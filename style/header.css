@@ -12,7 +12,7 @@
 }
 
 .header__menu-wrapper {
-    background-image: url("../assets/Menu.svg");
+    background-image: url(../assets/Menu.svg);
     width: 4.5rem;
     height: 4rem;
     display: inline-block;
@@ -22,7 +22,7 @@
 }
 
 .wrapper__button:checked ~ .wrapper__label > .header__menu-wrapper { 
-    background-image: url("../assets/Menu\ Aberto.svg");
+    background-image: url(../assets/Menu\ Aberto.svg)
 }
 
 .wrapper__button:checked ~ .wrapper__label {
@@ -92,6 +92,15 @@
     text-decoration: none;
 }
 
+.options__item:hover {
+    background: var(--color-second);
+    -webkit-text-fill-color: var(--color-first);
+    color: var(--color-first);
+}
+
+.options__item:hover> .options__link {
+    color: var(--color-first);
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -141,10 +150,14 @@
     }
 
     .wrapper__list-menu {
-        width: auto;
-        top: 70%
+        width: 20vw;
+        top: 70%;
+        text-align: start;
     }
 
+    .wrapper__list-menu__item {
+        padding: 1rem;
+    }
 
 }
 
@@ -183,5 +196,10 @@
 
     .wrapper__list-menu{
         top: 95%;
+        text-align: start;
+        width: 12vw;
+    }
+    .wrapper__list-menu__item {
+        padding: 1rem;
     }
 }

@@ -26,6 +26,7 @@
     color: var(--color-second);
     background: url(/assets/Email.svg) no-repeat;
     padding-left: 2rem;
+    text-align: center;
 }
 
 

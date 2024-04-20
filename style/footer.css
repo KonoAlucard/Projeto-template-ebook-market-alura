@@ -12,6 +12,8 @@ hr {
     display: none;
 }
 
+
+
 @media screen and (min-width: 1024px) { 
     .footer {
         display: flex;
@@ -36,6 +38,11 @@ hr {
         margin-bottom: 1rem;
         font-size: 0.8rem;
         text-transform: uppercase;
+    }
+
+
+    .footer__expand__link:hover {
+        color: var(--color-button);
     }
 
 }
